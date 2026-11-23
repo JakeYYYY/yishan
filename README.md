@@ -1,4 +1,4 @@
-# Yishan 一闪
+# Yishan
 
 Yishan is a SwiftUI app that turns iPhone screenshots into searchable records. Save a café to revisit, recover a task from a conversation, or turn a screenshot with a date and time into a Calendar event.
 
@@ -25,7 +25,7 @@ The app interface is in Chinese. The 15-second walkthrough uses app screenshots 
 1. Enable automatic screenshot collection in Yishan Settings and grant Photos access. Allow notifications if you want progress and result alerts.
 2. In Apple Shortcuts, create a personal automation using the **Screenshot** trigger.
 3. Choose **Photos** as the save location and select **Run Immediately**.
-4. Add Yishan’s **Summarize New Screenshot** action (摘要新截图), then save the automation.
+4. Add Yishan’s **Summarize New Screenshot** action, then save the automation.
 
 Background execution depends on the iOS version and the permissions granted. Manual import also works as a standalone workflow.
 
