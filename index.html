@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yishan is an iPhone app that turns screenshots into a searchable library of notes, tasks, and events.">
+  <title>Yishan 一闪 | Screenshot organizer for iPhone</title>
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="wrap">
+    <a class="brand" href="./"><img src="icon.png" alt="" width="34" height="34"> Yishan <span lang="zh">一闪</span></a>
+    <nav aria-label="Sections"><a href="#screens">Screenshots</a><a href="#demo">Video</a><a href="#guide">Setup</a><a href="https://github.com/JakeYYYY/yishan">GitHub</a></nav>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <div>
+        <p class="platform">An iPhone app for screenshots</p>
+        <h1 id="title">Find what you<br>screenshotted.</h1>
+        <p class="intro">Turn screenshots from your photo library into searchable records. Find the café you saved, review a task, or add a dated event to Calendar.</p>
+        <a class="button" href="#demo">Watch the walkthrough</a>
+      </div>
+      <figure class="hero-screen">
+        <img src="library.png" alt="Yishan on iPhone with a search bar, category filters, and an import button" width="1206" height="2622">
+        <figcaption>The screenshot library on iPhone Simulator</figcaption>
+      </figure>
+    </section>
+    <section id="screens" aria-labelledby="screens-title">
+      <h2 id="screens-title">A library you can search</h2>
+      <div class="gallery">
+        <figure><a href="library.png"><img src="library.png" loading="lazy" alt="Empty screenshot library with the import button at bottom right"></a><figcaption><strong>Start with a screenshot</strong><br>Tap + to choose images from Photos.</figcaption></figure>
+        <figure><a href="sample-library.png"><img src="sample-library.png" loading="lazy" alt="Earlier Yishan interface with sample records for design feedback and a café"></a><figcaption><strong>Browse saved records</strong><br>An earlier build showing sample titles, categories, and summaries.</figcaption></figure>
+      </div>
+    </section>
+    <section id="demo" class="demo" aria-labelledby="demo-title">
+      <div><h2 id="demo-title">See the library in action</h2><p>A 15-second walkthrough made from app screenshots, with English captions. It shows where to import screenshots and how saved records appear in the library.</p><a href="walkthrough.mp4">Open the MP4</a></div>
+      <video controls playsinline preload="metadata" poster="library.png" aria-label="Yishan screenshot walkthrough">
+        <source src="walkthrough.mp4" type="video/mp4">
+      </video>
+    </section>
+    <section id="guide" aria-labelledby="guide-title">
+      <h2 id="guide-title">Get started</h2>
+      <ol class="steps">
+        <li><h3>Import from Photos</h3><p>Tap + in the screenshot library and select up to 12 images. Review the selection and start recognition.</p></li>
+        <li><h3>Choose how to recognize text</h3><p>Yishan uses on-device Apple Vision OCR. For richer summaries and structured records, open Settings, choose TeamoRouter or Alibaba Cloud Bailian, and enter your own API key. If a cloud request fails or a key is missing, the app falls back to OCR when it can read text.</p></li>
+        <li><h3>Review and use the result</h3><p>Search saved records by title, summary, or place. Open a record to review or edit the extracted information. Save a dated event to Calendar or a task to Reminders. You can also copy your library as text to use in another app.</p></li>
+        <li><h3>Set up optional screenshot automation</h3><p>Enable automatic collection in Yishan Settings and grant Photos and notification access. In Apple Shortcuts, create a Screenshot automation, choose Photos as the save location, select Run Immediately, and add Yishan’s Summarize New Screenshot action (<span lang="zh">摘要新截图</span>). Setup and background behavior depend on the iOS version and permissions.</p></li>
+      </ol>
+    </section>
+    <section id="privacy" aria-labelledby="privacy-title">
+      <h2 id="privacy-title">Data and permissions</h2>
+      <p>Yishan stores its records and previews on the device and keeps API keys in the iOS Keychain. A configured cloud recognition provider receives the selected image and readable embedded metadata during recognition. Calendar, Reminders, Photos, and notifications use iOS permissions.</p>
+      <p>Yishan is a SwiftUI project. The Xcode project targets iOS 17 or later. The interface shown in the screenshots is in Chinese.</p>
+    </section>
+  </main>
+  <footer class="wrap"><span>Yishan 一闪</span><a href="#title">Back to top</a></footer>
+</body>
+</html>
